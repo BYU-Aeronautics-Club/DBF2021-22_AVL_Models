@@ -1,4 +1,4 @@
-DBF 1
+Proposal Aircraft
 0.0                   !   Mach
 0     0     0.0       !   iYsym  iZsym  Zsym
 9.0   1.167 8.0       !   Sref   Cref   Bref   reference area, chord, span
@@ -36,11 +36,11 @@ NACA
 
 CONTROL
 #Cname   Cgain  Xhinge  HingeVec       SgnDup
-aileron   1.0	0.70	0.0 1.0 0.11	-1.0
+camber	 1.0	0.80	0.0 1.0 0.11	-1.0
 CONTROL
 
 #Cname   Cgain  Xhinge  HingeVec       SgnDup
-aileron  -1.0   0.70    0.0 1.0 0.11   -1.0
+aileron  -1.0   0.80    0.0 1.0 0.11   -1.0
 #-----------------------------
 SECTION
 #    Xle         Yle         Zle         chord       angle   Nspan  Sspace
@@ -50,10 +50,10 @@ NACA
 2412
 
 CONTROL
-camber   1.0    0.70    0.0 1.0 0.11    1.0
+camber   1.0    0.80    0.0 1.0 0.11    1.0
 
 CONTROL
-aileron  -1.0   0.70    0.0 1.0 0.11   -1.0
+aileron  -1.0   0.80    0.0 1.0 0.11   -1.0
 
 #
 #==============================================================
