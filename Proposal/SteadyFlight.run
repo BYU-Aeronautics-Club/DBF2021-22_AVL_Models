@@ -7,17 +7,17 @@
  pb/2V        ->  pb/2V       =   0.00000    
  qc/2V        ->  qc/2V       =   0.00000    
  rb/2V        ->  rb/2V       =   0.00000    
- camber	      ->  camber	     =   0.00000    
+ flap         ->  flap        =   0.00000    
  aileron      ->  aileron     =   0.00000    
- elevator     ->  Cm pitchmom =   0.00000    
+ elevator     ->  elevator    =   0.00000    
  rudder       ->  rudder      =   0.00000    
 
  alpha     =   0.00000     deg                             
  beta      =   0.00000     deg                             
  pb/2V     =   0.00000                                     
- qc/2V     =  0.140231E-23                                 
+ qc/2V     =   0.00000                                     
  rb/2V     =   0.00000                                     
- CL        =  0.278811                                     
+ CL        =  0.308857                                     
  CDo       =   0.00000                                     
  bank      =   0.00000     deg                             
  elevation =   0.00000     deg                             

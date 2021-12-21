@@ -27,33 +27,56 @@ TRANSLATE
     0.0     0.00000     0.00000
 #
 #--------------------------------------------------------------
-#    Xle         Yle         Zle         chord       angle   Nspan  Sspace
+# Starting at the root
+#    Xle         Yle         Zle         chord         angle
 SECTION
-    0.0          0.0         0.0         1.50        0.000   9     -0.75
+    0.0          0.0         0.0         1.50          0.0
 
 NACA
 2412
 
-CONTROL
-#Cname   Cgain  Xhinge  HingeVec       SgnDup
-camber	 1.0	0.80	0.0 1.0 0.11	-1.0
-CONTROL
-
-#Cname   Cgain  Xhinge  HingeVec       SgnDup
-aileron  -1.0   0.80    0.0 1.0 0.11   -1.0
 #-----------------------------
+# At the start of the flaperon
 SECTION
-#    Xle         Yle         Zle         chord       angle   Nspan  Sspace
-     0.75        4.00        0.00        0.75        0.000   5     -1.25
+#    Xle         Yle         Zle         chord         angle
+     0.15        0.8        0.00         1.35          0.0
 
 NACA
 2412
 
 CONTROL
-camber   1.0    0.80    0.0 1.0 0.11    1.0
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+flap     1.0    0.80    0.0 1.0 0.11    1.0
 
 CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
 aileron  -1.0   0.80    0.0 1.0 0.11   -1.0
+
+#-----------------------------
+# At the end of the flaperon
+SECTION
+#    Xle         Yle         Zle         chord         angle
+     0.60        3.20        0.00        0.90          0.0
+
+NACA
+2412
+
+CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+flap     1.0    0.80    0.0 1.0 0.11    1.0
+
+CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+aileron  -1.0   0.80    0.0 1.0 0.11   -1.0
+
+#-----------------------------
+# At the end of the wing
+SECTION
+#    Xle         Yle         Zle         chord         angle
+     0.75        4.00        0.00        0.75          0.0
+
+NACA
+2412
 
 #
 #==============================================================
