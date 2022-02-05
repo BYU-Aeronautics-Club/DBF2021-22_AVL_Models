@@ -51,6 +51,10 @@ SECTION                                                     |  (keyword)
 AFIL 0.0 1.0
 SD7062.dat
 
+CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+aileron  -1.0   0.80    0.0 1.0 0.11   -1.0
+
 
 #____Start of Winglet_______
 #______________
@@ -59,6 +63,10 @@ SECTION                                                     |  (keyword)
 
 AFIL 0.0 1.0
 SD7062.dat
+
+CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+aileron  -1.0   0.80    0.0 1.0 0.11   -1.0
 
 
 #____End of Winglet_______
