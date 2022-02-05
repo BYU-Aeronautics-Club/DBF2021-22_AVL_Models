@@ -117,6 +117,10 @@ SECTION                                                     |  (keyword)
 NACA
 0020
 
+CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+elevator  1.0    0.35    0.0 1.0 0.0     1.0
+
 
 #______________
 SECTION                                                     |  (keyword)
@@ -125,6 +129,9 @@ SECTION                                                     |  (keyword)
 NACA
 0020
 
+CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+elevator  1.0    0.35    0.0 1.0 0.0     1.0
 
 
 #### VERTICAL STABILIZER ####
@@ -154,6 +161,9 @@ SECTION                                                     |  (keyword)
 NACA
 0020
 
+CONTROL
+rudder    1.0    0.40    0.0 0.0 1.0
+
 
 #______________
 SECTION                                                     |  (keyword)
@@ -162,6 +172,7 @@ SECTION                                                     |  (keyword)
 NACA
 0020
 
-
+CONTROL
+rudder    1.0    0.40    0.0 0.0 1.0
 
 
