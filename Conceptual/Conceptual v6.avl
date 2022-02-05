@@ -42,6 +42,10 @@ SECTION                                                     |  (keyword)
 AFIL 0.0 1.0
 SD7062.dat
 
+CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+flap     1.0    0.80    0.0 1.0 0.11    1.0
+
 
 #____Start of Dihedral_______
 #______________
@@ -50,6 +54,10 @@ SECTION                                                     |  (keyword)
 
 AFIL 0.0 1.0
 SD7062.dat
+
+CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+flap     1.0    0.80    0.0 1.0 0.11    1.0
 
 CONTROL
 #Cname   Cgain  Xhinge  HingeVec       SgnDup
