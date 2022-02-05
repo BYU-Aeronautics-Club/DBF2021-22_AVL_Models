@@ -1,0 +1,174 @@
+Proposal Aircraft
+0.0                   !   Mach
+0     0     0.0       !   iYsym  iZsym  Zsym
+9.0   1.167 8.0       !   Sref   Cref   Bref   reference area, chord, span
+0.00  0.0   0.0       !   Xref   Yref   Zref   moment reference location (arb.)
+0.000                 !   CDp
+#
+#==============================================================
+#
+SURFACE
+Wing
+10  1.0  22  1.0   ! Nchord   Cspace   Nspan  Sspace
+#
+# reflect image wing about y=0 plane
+YDUPLICATE
+     0.00000 
+#
+# twist angle bias for whole surface
+ANGLE
+     2.00000    
+#
+SCALE
+  1.0   1.0   1.0
+#
+# x,y,z bias for whole surface
+TRANSLATE
+    0.0     0.00000     0.00000
+#
+#--------------------------------------------------------------
+# Starting at the root
+#    Xle         Yle         Zle         chord         angle
+SECTION
+    0.0          0.0         0.0         1.50          0.0
+
+NACA
+2412
+
+#-----------------------------
+# At the start of the flap
+SECTION
+#    Xle         Yle         Zle         chord         angle
+     0.00        0.2        0.00         1.50          0.0
+
+NACA
+2412
+
+CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+flap     1.0    0.80    0.0 1.0 0.11    1.0
+
+#-----------------------------
+# At the end of the flap
+SECTION
+#    Xle         Yle         Zle         chord         angle
+     0.00        1.8         0.00        1.50          0.0
+
+NACA
+2412
+
+CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+flap     1.0    0.80    0.0 1.0 0.11    1.0
+
+#-----------------------------
+# At the point where the polyhedral begins
+SECTION
+#   Xle         Yle         Zle         chord         angle
+    0.00        2.0         0.0         1.50          0.0
+
+NACA
+2412
+
+#-----------------------------
+# At the start of the aileron
+SECTION
+#    Xle         Yle         Zle         chord         angle
+     0.00        2.2        0.00         1.50          0.0
+
+NACA
+2412
+
+CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+aileron  -1.0   0.80    0.0 1.0 0.11   -1.0
+
+#-----------------------------
+# At the end of the aileron
+SECTION
+#    Xle         Yle         Zle         chord         angle
+     0.00        3.8         0.00        1.50          0.0
+
+NACA
+2412
+
+CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+aileron  -1.0   0.80    0.0 1.0 0.11   -1.0
+
+#-----------------------------
+# At the end of the wing
+SECTION
+#    Xle         Yle         Zle         chord         angle
+     0.00        4.00        0.00        1.50          0.0
+
+NACA
+2412
+
+#
+#==============================================================
+#
+SURFACE
+Horizontal Stabilizer
+8  1.0  5  -1.5  !  Nchord   Cspace
+#
+# reflect image wing about y=0 plane
+YDUPLICATE
+     0.00000 
+#
+# twist angle bias for whole surface
+ANGLE
+     0.00000    
+#
+# x,y,z bias for whole surface
+TRANSLATE
+   5     0.00000     0.00000
+SCALE
+ 1.000  1.0  1.0
+#--------------------------------------------------------------
+#    Xle         Yle         Zle         chord       angle   Nspan  Sspace
+SECTION
+   0.00          0.0         0.0         0.70        0.000   5     -1.50
+
+NACA
+0010
+
+CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+elevator  1.0    0.35    0.0 1.0 0.11     1.0
+#-----------------------------
+SECTION
+#    Xle         Yle         Zle         chord       angle   Nspan  Sspace
+     0.00        1.5         0.0         0.70        0.000   0      0
+
+NACA
+0010
+
+CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+elevator  1.0    0.35    0.0 1.0 0.0     1.0
+#
+#==============================================================
+#
+SURFACE
+Vertical Stabilizer
+8  1.0  14  0.75  ! Nchord   Cspace
+#
+# x,y,z bias for whole surface
+TRANSLATE
+   5.0     0.00000     0.00000
+#--------------------------------------------------------------
+#    Xle         Yle         Zle         chord       angle   Nspan  Sspace
+SECTION
+     0.0         0.0         0.00        0.70        0.000   4      1.50
+
+CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+rudder    1.0    0.40    0.0 0.0 1.0
+#-----------------------------
+SECTION
+#    Xle         Yle         Zle         chord       angle   Nspan  Sspace
+     0.0         0.0         1.5         0.70        0.000   6     -1.50
+
+CONTROL
+rudder    1.0    0.40    0.0 0.0 1.0
