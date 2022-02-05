@@ -12,7 +12,7 @@ DBF 2021-22 Conceptual Design v6
 
 
 
-#========TODO: REMOVE OR MODIFY MANUALLY DUPLICATE SECTIONS IN SURFACE DEFINITION=========
+#### MAIN WING ####
 SURFACE                      | (keyword)
 Main Wing
 #Nchord    Cspace   [ Nspan Sspace ]
@@ -34,7 +34,7 @@ ANGLE
    2.000                         | dAinc
 
 
-#____PANEL 1_______
+#____Root_______
 #______________
 SECTION                                                     |  (keyword)
    0.0000    0.0000    0.0000    1.5000   0.000   19    3   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
@@ -43,15 +43,7 @@ AFIL 0.0 1.0
 SD7062.dat
 
 
-#______________
-SECTION                                                     |  (keyword)
-   0.1999    1.9000   -0.0070    1.2500   0.000   19    3   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
-
-AFIL 0.0 1.0
-SD7062.dat
-
-
-#____PANEL 2_______
+#____Start of Dihedral_______
 #______________
 SECTION                                                     |  (keyword)
    0.1999    1.9000   -0.0070    1.2500   0.000    3    1   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
@@ -60,15 +52,7 @@ AFIL 0.0 1.0
 SD7062.dat
 
 
-#______________
-SECTION                                                     |  (keyword)
-   0.4056    3.8024    0.1427    1.0000  -3.000    3    1   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
-
-AFIL 0.0 1.0
-SD7062.dat
-
-
-#____PANEL 3_______
+#____Start of Winglet_______
 #______________
 SECTION                                                     |  (keyword)
    0.4056    3.8024    0.1427    1.0000  -3.000    2    1   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
@@ -77,17 +61,17 @@ AFIL 0.0 1.0
 SD7062.dat
 
 
-#______________
+#____End of Winglet_______
 SECTION                                                     |  (keyword)
    0.4303    3.8047    0.8511    0.9091  -3.000    2    1   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
 
-AFIL 0.0 1.0
-NACA 0010.dat
+NACA
+0010
 
 
 
 
-#========TODO: REMOVE OR MODIFY MANUALLY DUPLICATE SECTIONS IN SURFACE DEFINITION=========
+#### HORIZONTAL STABILIZER ####
 SURFACE                      | (keyword)
 Elevator
 #Nchord    Cspace   [ Nspan Sspace ]
@@ -114,21 +98,20 @@ ANGLE
 SECTION                                                     |  (keyword)
    5.0000    0.0000    0.0000    0.8000   0.000   19    1   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
 
-AFIL 0.0 1.0
-NACA 0020.dat
+NACA
+0020
 
 
 #______________
 SECTION                                                     |  (keyword)
    5.3000    1.5000    0.0000    0.5000   0.000   19    1   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
 
-AFIL 0.0 1.0
-NACA 0020.dat
+NACA
+0020
 
 
 
-
-#========TODO: REMOVE OR MODIFY MANUALLY DUPLICATE SECTIONS IN SURFACE DEFINITION=========
+#### VERTICAL STABILIZER ####
 SURFACE                      | (keyword)
 Fin
 #Nchord    Cspace   [ Nspan Sspace ]
@@ -152,16 +135,16 @@ ANGLE
 SECTION                                                     |  (keyword)
    5.3000   -0.0000    1.5000    0.5000   0.000    7    0   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
 
-AFIL 0.0 1.0
-NACA 0020.dat
+NACA
+0020
 
 
 #______________
 SECTION                                                     |  (keyword)
    5.0000    0.0000    0.0000    0.8000   0.000    7    0   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
 
-AFIL 0.0 1.0
-NACA 0020.dat
+NACA
+0020
 
 
 
