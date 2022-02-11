@@ -46,22 +46,22 @@
  ---------------------------------------------
  Run case  2:  Takeoff Mission 3                       
 
- alpha        ->  alpha       =   0.00000    
+ alpha        ->  CL          =   1.60000    
  beta         ->  beta        =   0.00000    
  pb/2V        ->  pb/2V       =   0.00000    
  qc/2V        ->  qc/2V       =   0.00000    
  rb/2V        ->  rb/2V       =   0.00000    
- flap         ->  CL          =  0.406000    
+ flap         ->  flap        =   45.0000    
  aileron      ->  Cl roll mom =   0.00000    
  elevator     ->  Cm pitchmom =   0.00000    
  rudder       ->  Cn yaw  mom =   0.00000    
 
- alpha     =   0.00000     deg                             
+ alpha     =   7.14090     deg                             
  beta      =   0.00000     deg                             
- pb/2V     =   0.00000                                     
- qc/2V     = -0.135166E-16                                 
- rb/2V     = -0.360407E-15                                 
- CL        =  0.406000                                     
+ pb/2V     =  0.292137E-15                                 
+ qc/2V     =   0.00000                                     
+ rb/2V     = -0.255661E-14                                 
+ CL        =   1.60000                                     
  CDo       =   0.00000                                     
  bank      =   0.00000     deg                             
  elevation =   0.00000     deg                             
