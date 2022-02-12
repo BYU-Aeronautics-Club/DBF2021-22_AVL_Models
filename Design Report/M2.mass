@@ -1,0 +1,38 @@
+#-------------------------------------------------
+#
+#   DBF2022_M2
+#
+#  Dimensional unit and parameter data.
+#  Mass & Inertia breakdown.
+#-------------------------------------------------
+#  Names and scalings for units to be used for trim and eigenmode calculations.
+#  The Lunit and Munit values scale the mass, xyz, and inertia table data below.
+#  Lunit value will also scale all lengths and areas in the AVL input file.
+#
+Lunit =     0.3048 m
+Munit =     0.4536 kg
+Tunit = 1.0 s
+#-------------------------
+#  Gravity and density to be used as default values in trim setup (saves runtime typing).
+#  Must be in the unit names given above (i.e. m,kg,s).
+g   = 9.81
+rho = 1.225
+#-------------------------
+#  Mass & Inertia breakdown.
+#  x y z  is location of item's own CG.
+#  Ixx... are item's inertias about item's own CG.
+#
+#  x,y,z system here must be exactly the same one used in the .avl input file
+#     (same orientation, same origin location, same length units)
+#
+#     mass          x          y          z        Ixx        Iyy        Izz        Ixy        Ixz        Iyz 
+         2       0.69  -4.24e-16     0.0857       9.54      0.205       9.67          0    0.00741          0 ! Main Wing
+         1       5.41  -1.52e-17   3.53e-07      0.583     0.0277       0.61          0  -1.03e-07          0 ! Elevator
+       0.5       5.41   3.53e-07      0.637     0.0886      0.102     0.0138          0     0.0102          0 ! Fin
+      1.32       -0.5          0          0      0.000      0.000      0.000 ! Battery
+       0.7        0.2          1          0      0.000      0.000      0.000 ! Starboard Motor
+       0.7        0.2         -1          0      0.000      0.000      0.000 ! Port Motor
+       0.3          0          0          0      0.000      0.000      0.000 ! Starboard ESC
+       0.3          0          0          0      0.000      0.000      0.000 ! Port ESC
+       0.5          0          0          0      0.000      0.000      0.000 ! Cabeling / Flight Controller / Receiver
+         7        0.3          0          0      0.000      0.000      0.000 ! Payload/Structures
