@@ -127,7 +127,7 @@ NACA
 
 CONTROL
 #Cname   Cgain  Xhinge  HingeVec       SgnDup
-elevator  1.0    0.35    0.0 1.0 0.0     1.0
+elevator  1.0    0.70    0.0 1.0 0.0     1.0
 
 
 #______________
@@ -139,7 +139,7 @@ NACA
 
 CONTROL
 #Cname   Cgain  Xhinge  HingeVec       SgnDup
-elevator  1.0    0.35    0.0 1.0 0.0     1.0
+elevator  1.0    0.70    0.0 1.0 0.0     1.0
 
 
 #### VERTICAL STABILIZER ####
@@ -170,7 +170,7 @@ NACA
 0020
 
 CONTROL
-rudder    1.0    0.40    0.0 0.0 1.0
+rudder    1.0    0.70    0.0 0.0 1.0
 
 
 #______________
@@ -181,6 +181,6 @@ NACA
 0020
 
 CONTROL
-rudder    1.0    0.40    0.0 0.0 1.0
+rudder    1.0    0.70    0.0 0.0 1.0
 
 
