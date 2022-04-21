@@ -54,31 +54,22 @@ CONTROL
 #Cname   Cgain  Xhinge  HingeVec       SgnDup
 flap     1.0    0.80    0.0 1.0 0.11    1.0
 
-
-#____Start of Dihedral_______
-#______________
-SECTION                                                     |  (keyword)
-   0.2500    1.9000   -0.0070    1.2500   0.000    10    3   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
-
-AFIL 0.0 1.0
-SD7062.dat
-
 CONTROL
 #Cname   Cgain  Xhinge  HingeVec       SgnDup
-flap     1.0    0.80    0.0 1.0 0.11    1.0
-
-CONTROL
-#Cname   Cgain  Xhinge  HingeVec       SgnDup
-aileron  -1.0   0.80    0.0 1.0 0.11   -1.0
+aileron  -1.0    0.80    0.0 1.0 0.11    -1.0
 
 
 #____Start of Winglet_______
 #______________
 SECTION                                                     |  (keyword)
-   0.5000    3.8024    0.1427    1.0000  -3.000    10    3   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+   0.5000    3.8024    0.0000    1.0000  -3.000    10    3   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
 
 AFIL 0.0 1.0
 SD7062.dat
+
+CONTROL
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+flap     1.0   0.80    0.0 1.0 0.11   1.0
 
 CONTROL
 #Cname   Cgain  Xhinge  HingeVec       SgnDup
@@ -91,9 +82,6 @@ SECTION                                                     |  (keyword)
 
 NACA
 0010
-
-
-
 
 #### HORIZONTAL STABILIZER ####
 SURFACE                      | (keyword)
